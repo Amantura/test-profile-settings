@@ -116,7 +116,6 @@ import { FEMALE, MALE } from '@/constants/gender'
 import { EN, KG, RU } from '@/constants/language'
 import { setUser, user } from '@/stores/user'
 import { toTypedSchema } from '@vee-validate/yup'
-import { push } from 'notivue'
 import * as S from 'yup'
 
 const formId = useId()
@@ -159,7 +158,6 @@ const submit = handleSubmit(values => {
     timezone: values.timezone,
     language: values.language
   })
-  push.success('Success!')
 })
 
 const genderOptions = [
